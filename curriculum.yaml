@@ -1,0 +1,17 @@
+source_root: /root/ultralytics-8.3.27/GC10-DET-2
+similarity_csv: /root/ultralytics-8.3.27/yolov8_similarity_subsets/source_similarity.csv
+direction: high-to-low
+cumulative: true
+total_ranked_samples: 1838
+stages:
+- index: 1
+  name: GC10-DET-2_stage1_top25
+  ratio: 0.25
+  samples: 459
+  data: /root/ultralytics-8.3.27/yolov8_curriculum_subsets/GC10-DET-2_stage1_top25/data.yaml
+- index: 2
+  name: GC10-DET-2_stage2_top75
+  ratio: 0.75
+  samples: 1378
+  data: /root/ultralytics-8.3.27/yolov8_curriculum_subsets/GC10-DET-2_stage2_top75/data.yaml
+ablations: []
